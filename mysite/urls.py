@@ -19,5 +19,8 @@ from movie import views as movie_view
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
-    url(r'^$', movie_view.index)
+    url(r'^$', movie_view.index),
+    url(r'^$', movie_view.test, name='test'),
+    url(r'^add/$', movie_view.add, name='add'),
+    url(r'^add/(\d+)/(\d+)/$', movie_view.add2, name='add2')
 ]
