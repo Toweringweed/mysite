@@ -5,9 +5,13 @@ from .models import Mdetail
 
 # Create your views here.
 def index(request):
-    last_list = Mdetail.objects.order_by('m_update_douban')[:5]
-    output = ','.join([p.m_name for p in last_list])
-    return HttpResponse(output)
+    last_list = Mdetail.objects.order_by('-m_update_douban',)[:5]
+    list_cc = []
+    for row in last_list:
+        list_c = '<li>' + '<a href = "' + row.m_douban_url +'">' + row.m_name + '</a></li>'
+        list_cc.append(list_c)
+    output = ''.join(list_cc)
+    return render(request, 'index.html', {"output": output}, content_type='html')
 
 def test(request):
     return render(request, 'test.html')
