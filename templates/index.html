@@ -5,7 +5,10 @@
     <title>Title</title>
 </head>
 <body>
-{{ output |safe }}
-
+    <ul>
+    {% for i in last_list %}
+    <li><a href="{% url 'detail' i.m_id %}" target="_blank" >{{ i.m_name }}</a><span>{{ i.m_update_douban | date:"Y-m-d" }}</span></li>
+    {% endfor %}
+    </ul>
 </body>
 </html>
