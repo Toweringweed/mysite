@@ -1,11 +1,11 @@
 from django.shortcuts import render, redirect, get_object_or_404
 from django.http import HttpResponse
 from .models import Mdetail, Marea
+from django.db.models import Q
 
 def index(request):
     last_list = Mdetail.objects.order_by('-m_update_douban')[:5]
-    last_china = Mdetail.objects.filter(m_area__m_area="台湾")
-
+    last_china = Mdetail.objects.filter(Q(m_year__m_year="2000"), Q(m_area__m_area__contains="大陆") | Q(m_area__m_area__contains="香港"))[:5]
     # list_cc = []
     # for row in last_list:
     #     list_c = '<li>' + '<a href = "' + row.m_douban_url +'">' + row.m_name + '</a></li>'
