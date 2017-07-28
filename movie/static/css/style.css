@@ -1,0 +1,6 @@
+body{background: #888; font-size:14px; }
+a{color:orange}
+
+#head{width: 1000px; margin: 0 auto; text-align: center; float: none; clear: both}
+#nav{}
+#nav ul{width: 500px; float: left;}
