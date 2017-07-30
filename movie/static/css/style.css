@@ -1,6 +1,14 @@
-body{background: #888; font-size:14px; }
-a{color:orange}
+@charset "utf-8";
+/* CSS Document */
+body{background: #000; font-family: 'Microsoft YaHei'}
+#head{margin: 0 auto; width: 1000px }
+#middle{width: 1000px; margin: 0 auto}
+#foot{margin: 0 auto; width: 1000px}
 
-#head{width: 1000px; margin: 0 auto; text-align: center; float: none; clear: both}
-#nav{}
-#nav ul{width: 500px; float: left;}
+.nav{background: #2a2a2a; clear: both; padding: 10px 2px}
+.nav a{color: #bbbbbb; text-decoration: none}
+.nav a:hover{color: #eee}
+.nav_box{width: 580px; float: left; padding:0 0 0 10px}
+.nav ul{list-style: none; clear: both; padding: 0; margin: 5px 0; display: block; border-right:#222 1px solid}
+.nav ul li{float:left; color: #eee; margin-right: 8px; }
+.small{clear: both; float: none}

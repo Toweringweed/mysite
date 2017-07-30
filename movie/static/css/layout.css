@@ -1,5 +1,5 @@
 body{background: #555; font-size:14px; }
-a{color:blue}
+a{color:red}
 #head{width: 1000px; margin: 0 auto; text-align: center; float: none; clear: both}
 #nav{background: #333; padding:5px}
 #nav ul{width: 630px; float: left; list-style:none; margin:0; padding:0 }
@@ -7,3 +7,8 @@ a{color:blue}
 #left{width:800px; float:left}
 #right{width:180px; float:right}
 .small{clear:both; height:1px; float:none}
+
+.movie_list{list-style:none}
+.movie_list li{float:left; width:150px;}
+
+.pagination{float:none; clear:both}

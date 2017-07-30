@@ -20,6 +20,7 @@ from movie import views as movie_view
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'^detail/(\d+)/$', movie_view.detail, name='detail'),
+    url(r'^movie_list/(\w+)/(\w+)/(\d+)', movie_view.movie_list, name='movie_list'),
     url(r'^$', movie_view.index),
     url(r'^add/$', movie_view.add, name='add'),
     url(r'^add/(\d+)/(\d+)/$', movie_view.add2, name='add2')
