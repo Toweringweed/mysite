@@ -10,5 +10,5 @@ body{background: #000; font-family: 'Microsoft YaHei'}
 .nav a:hover{color: #eee}
 .nav_box{width: 580px; float: left; padding:0 0 0 10px}
 .nav ul{list-style: none; clear: both; padding: 0; margin: 5px 0; display: block; border-right:#222 1px solid}
-.nav ul li{float:left; color: #eee; margin-right: 8px; }
+.nav ul li{float:left; color: #eee; margin-right: 10px; }
 .small{clear: both; float: none}
