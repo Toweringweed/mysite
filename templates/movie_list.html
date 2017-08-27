@@ -5,6 +5,7 @@
     <title>{{ area }}电影——毛毛狗影视</title>
     {% load staticfiles %}
     <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}" />
+    <link rel="stylesheet" type="text/css" href="../movie/static/css/style.css" />
 </head>
 <body>
 <div>
@@ -15,7 +16,7 @@
                 <td></td>
             </tr>
         </table>
-        <div id="nav">
+        <div class="nav">
 
             <ul style="width:350px">
                 <dd>按形式</dd>
@@ -71,7 +72,7 @@
              <ul class="movie_list">
             {% for i in page_list %}
             <li>
-                <dd><a href="{% url 'detail' i.m_id %}" target="_blank" ><img src="#" height="170" width="120" /></a></dd>
+                <dd><a href="{% url 'detail' i.m_id %}" target="_blank" ><img src="http://106.14.218.36/movie/poster/{{i.m_poster}}.jpg" height="170" width="120" /></a></dd>
                 <dl><a href="{% url 'detail' i.m_id %}" target="_blank" >{{ i.m_name2 }}</a></dl>
                 <!--<span>{{ i.m_update_douban | date:"Y-m-d" }}</span></li>-->
             {% endfor %}
