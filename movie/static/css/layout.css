@@ -1,14 +1,21 @@
-body{background: #555; font-size:14px; }
-a{color:red}
-#head{width: 1000px; margin: 0 auto; text-align: center; float: none; clear: both}
-#nav{background: #333; padding:5px}
-#nav ul{width: 630px; float: left; list-style:none; margin:0; padding:0 }
-#nav ul dd, li{float: left; padding:3px 5px; margin:0 3px}
-#left{width:800px; float:left}
-#right{width:180px; float:right}
-.small{clear:both; height:1px; float:none}
+@charset "utf-8";
+/* CSS Document */
+body{background: #000; font-family: 'Microsoft YaHei'}
+.head{margin: 0 auto; width: 1000px }
+.middle{width: 1000px; margin: 0 auto}
+.foot{margin: 0 auto; width: 1000px}
+.left{width:800px; float:left}
+.right{width:180px; float:right}
 
+.nav{background: #2a2a2a; clear: both; padding: 10px 2px}
+.nav a{color: #bbbbbb; text-decoration: none}
+.nav a:hover{color: #eee}
+.nav_box{width: 580px; float: left; padding:0 0 0 10px}
+.nav ul{list-style: none; clear: both; padding: 0; margin: 5px 0; display: block; border-right:#222 1px solid}
+.nav ul li{float:left; color: #eee; margin-right: 10px; }
 .movie_list{list-style:none}
-.movie_list li{float:left; width:150px;}
+.movie_list li{float:left; width:160px;}
+
+.small{clear: both; float: none}
 
 .pagination{float:none; clear:both}

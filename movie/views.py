@@ -62,7 +62,6 @@ def movie_list(request, t, arg, cur_num):
     return render(request, 'movie_list.html', {
         "page_list": page_list,
         "page": show
-
     })
 
 def add(request):

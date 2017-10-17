@@ -5,12 +5,12 @@
     <title>毛毛狗影视</title>
     {% load staticfiles %}
     <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}" />    
-    <link rel="stylesheet" type="text/css" href="../movie/static/css/style.css" />
+    <link rel="stylesheet" type="text/css" href="static/css/style.css" />
     
 </head>
 <body>
 <div>
-    <div id="head">
+    <div class="head">
         <table>
             <tr>
                 <td>毛毛狗电影</td>
@@ -76,8 +76,8 @@
         <div class="small"></div>
 
     </div>
-    <div id="middle">
-        <div id="left">
+    <div class="middle">
+        <div class="left">
              <ul>
             {% for i in last_list %}
             <li><a href="{% url 'detail' i.m_id %}" target="_blank" >{{ i.m_name }}</a><span>{{ i.m_update_douban | date:"Y-m-d" }}</span></li>
@@ -91,12 +91,12 @@
             {% endfor %}
             </ul>
         </div>
-        <div id="right">
+        <div class="right">
 
         </div>
 
     </div>
-    <div id="foot"></div>
+    <div class="foot"></div>
 
 </div>
 
